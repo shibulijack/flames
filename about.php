@@ -37,7 +37,7 @@
           <a class="brand" href="http://facebook.com/shibu.lijack">CyberJack</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="index.php">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li class="active"><a href="#">About</a></li>
               <li><a href="http://shibulijack.wordpress.com">Contact</a></li>
             </ul>
