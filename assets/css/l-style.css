@@ -1,0 +1,71 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #fff url('bright_squares.png')repeat;
+  }
+
+.k-border {
+background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -ms-linear-gradient(top, #f9f9f9, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #e6e6e6);
+  background-image: -o-linear-gradient(top, #f9f9f9, #e6e6e6);
+  background-image: linear-gradient(top, #f9f9f9, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #f9f9f9, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #cccccc;
+  *border: 0;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e6e6e6', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  *zoom: 1;
+
+   
+}
+.marketing{
+text-align: center;
+padding-bottom: 20px;
+}
+.l-text {
+text-align: center;
+}
+.result {
+font-size: 2em;
+text-align: center;
+color: #000;
+animation:kolortxt 20s linear infinite;
+			-moz-animation:kolortxt 20s linear infinite; /* Firefox */
+			-webkit-animation:kolortxt 20s linear infinite; /* Safari and Chrome */
+}
+@keyframes kolortxt
+{
+0%   	{color:#97080E;}
+25% 	{color:#DA4B0F;}
+50% 	{color:#488C13;}
+70% 	{color:#1B55C0;}
+100%	{color:#97080E;}
+}
+
+@-moz-keyframes kolortxt /* Firefox */
+{
+0%   	{color:#97080E;}
+25% 	{color:#DA4B0F;}
+50% 	{color:#488C13;}
+70% 	{color:#1B55C0;}
+100%	{color:#97080E;}
+}
+
+@-webkit-keyframes kolortxt /* Safari and Chrome */
+{
+0%   	{color:#97080E;}
+25% 	{color:#DA4B0F;}
+50% 	{color:#488C13;}
+70% 	{color:#1B55C0;}
+100%	{color:#97080E;}
+}

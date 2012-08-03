@@ -157,8 +157,6 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #ffffff;
-  background: url(bg.png) repeat;
 }
 
 a {
@@ -172,7 +170,7 @@ a:hover {
 }
 
 .row {
-  margin-left: 0px;
+  margin-left: -20px;
   *zoom: 1;
 }
 
@@ -1758,7 +1756,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("../images/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -2467,18 +2465,12 @@ table .span24 {
 .well {
   min-height: 20px;
   padding: 19px;
-  margin: inherit;
   margin-bottom: 20px;
-  margin-right: auto;
-  background-color: #f5f5f5;
-  border: 1px solid #eee;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #f4f4f4;
+  border: 3px solid #eee;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .well blockquote {
@@ -2555,11 +2547,6 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
-}
-
-button .text {
-font-size: 30px;
-padding-top: 30px;
 }
 
 .btn {
@@ -4973,22 +4960,7 @@ a.badge:hover {
 .invisible {
   visibility: hidden;
 }
-.k-slider {
-height: 300px;
-margin-bottom: 10px;
-text-align: center;
-background: #fff url(pattern.png) repeat;
- -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.75) 0 1px 7px 0px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.75) 0 1px 7px 0px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.75) 0 1px 7px 0px inset;
-  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.75) 0 1px 7px 0px inset;
-}
-.k-slider p {
-padding-top: 150px;
-}
-.klogo {
-min-height: 100px;
-}
-.klogo p {
-padding: 50px;
+
+.trans-border {
+	border: 3px solid rgba(0, 0, 0, 0.25);
 }
