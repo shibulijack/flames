@@ -10,13 +10,8 @@
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
   	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-	
+	<link href="assets/css/l-style.css" rel="stylesheet">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,25 +22,25 @@
   <body>
   <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="http://facebook.com/shibu.lijack">CyberJack</a>
+          <a class="brand" href="index.html">FLAMES</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.php">About</a></li>
-              <li><a href="http://shibulijack.wordpress.com">Contact</a></li>
+              <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+              <li><a href="about.html"><i class="icon-tag"></i> About</a></li>
+              <li><a href="http://facebook.com/shibu.lijack"><i class="icon-bullhorn"></i> Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-        </div>
+          </div>
       </div>
     </div>
     
-    <div class="container">
+    <div class="container-fluid">
     
     <header class="jumbotron masthead">
   <div class="inner">
@@ -70,6 +65,8 @@ $fname1=strtolower($_POST["fname1"]);
 $fname2=strtolower($_POST["fname2"]);
 $name1=$mname1.$mname2;
 $name2=$fname1.$fname2;
+$name1=str_replace(' ','',$name1);
+$name2=str_replace(' ','',$name2);
 if(($name1!=NULL) && ($name2!=NULL))
 {
 for($i=0;$i<strlen($name1);$i++)
@@ -103,28 +100,38 @@ while($l>1)
 }
 $result=strtoupper($flames);
 ?>
-<div class="hero-unit" style="min-height: 250px;">
+<div class="row-fluid" style="min-height: 250px;">
+<div class="span12 k-border well">
+
+<div class="span3">
+<center>
 <?php 
 switch($result)
 {
 	case 'F': echo "<img src=assets/images/friend.png style=float:left;>"; break;
 	case 'L': echo "<img src=assets/images/love.png style=float:left;>"; break;
-	case 'A': echo "<img src=assets/images/affectionate.png style=float:left;>"; break;
+	case 'A': echo "<img src=assets/images/affectionate.png>"; break;
 	case 'M': echo "<img src=assets/images/marriage.png style=float:left;>"; break;
 	case 'E': echo "<img src=assets/images/enemy.png style=float:left;>"; break;
 	case 'S': echo "<img src=assets/images/sibling.png style=float:left;>"; break;
 }
-?><center><p><h2><?php echo ucfirst($mname1);?></h2> &amp; <br><h2><?php echo ucfirst($fname1);?></h2> are <h1><?php echo $flames_text[$result];?></h1></center></p>
+?>
+</center>
+</div>
+<div class="span9 l-text">
+<p><h2><?php echo ucfirst($mname1);?></h2> &amp; <h2><?php echo ucfirst($fname1);?></h2> are <h2><span class="result"><?php echo $flames_text[$result];?></span></h2></p>
+</div>
+</div>
 </div>
 <?php } 
 else
 {
 ?>
-<div class="hero-unit">
+<div class="hero-unit k-border">
 <p>Please enter a valid input.</p>
 </div>
 <?php } ?>
-<p><a href="index.php" class="btn btn-primary">Go Back</a></p>
+<p><a href="index.html" class="btn btn-primary">Go Back</a></p>
 </div>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap-collapse.js"></script>
